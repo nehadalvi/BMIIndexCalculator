@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="@string/bmi_index_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBmiIndex"
+        android:layout_weight="0.04"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/weight_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWeight"
+        android:layout_weight="0.04"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/inputWeight" />
+
+        <TextView
+            android:text="@string/pounds_label"
+            android:layout_width="46dp"
+            android:layout_height="30dp"
+            android:id="@+id/textPounds"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/height_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHeight"
+        android:layout_weight="0.04"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/inputHeightFeet"
+            android:layout_weight="0.28" />
+
+        <TextView
+            android:text="@string/feet_label"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:id="@+id/textFeet"
+            android:layout_weight="0.28"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/inputHeightInch"
+            android:layout_weight="0.14" />
+
+        <TextView
+            android:text="@string/label_inches"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:id="@+id/textInch"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/label_button_calculateBmi"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBmiCalculate"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputBmi"
+        android:layout_weight="0.04"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputStatus"
+        android:layout_weight="0.04"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+</LinearLayout>

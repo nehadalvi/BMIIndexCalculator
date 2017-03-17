@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">In Class 2a</string>
+    <string name="bmi_index_label">Body Mass Index (BMI)</string>
+    <string name="weight_label">Weight</string>
+    <string name="pounds_label">lb</string>
+    <string name="height_label">Height</string>
+    <string name="feet_label">feet</string>
+    <string name="label_inches">inches</string>
+    <string name="label_button_calculateBmi">Calculate BMI</string>
+    <string name="your_bmi">Your BMI: </string>
+    <string name="you_are_overweight">You are Overweight</string>
+    <string name="you_are_underweight">You are Underweight</string>
+    <string name="you_are_normalweight">You are Normal weight</string>
+    <string name="you_are_obese">You are Obese</string>
+    <string name="invalid_input">Invalid Input</string>
+    <string name="bmi_calculated">BMI Calculated</string>
+</resources>
